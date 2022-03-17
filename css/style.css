@@ -13647,10 +13647,10 @@ input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s rightslide 
         padding: 0px 46px;
     }
     .mb-dash-mob{
-        margin-bottom: -260px;
+        margin-bottom: -350px;
     }
     .pb-dash-mob{
-        padding-bottom: 250px;
+        padding-bottom: 350px;
     }
 
     
