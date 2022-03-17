@@ -48,6 +48,7 @@
     <script  src="js/html5shiv.min.js"></script>
     <script  src="js/respond.min.js"></script>
     <![endif]-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -200,7 +201,7 @@
 </div>
 <!-- Sub Banner end -->
 
-<!-- Car details page start -->
+<!-- Property details page start -->
 <div class="car-details-page content-area-6">
     <div class="container">
         <div class="row">
@@ -219,7 +220,7 @@
                             <h3><span>CHF 822'900</span></h3>
                         </div>
                     </div>
-                    <div class="product-slider-box clearfix mbm-25">
+                    <div class="product-slider-box clearfix mbm-25 mb-mob" style="margin-bottom: -175px;">
                         <div class="product-img-slide">
                             <div class="slider-for">
                                 <img src="img/props/house1.jpg" class="img-fluid w-100" alt="slider-car">
@@ -305,8 +306,43 @@
                     </div>
                     <!-- Contact 2 start -->
                     <div class="contact-2 ca mb-50">
-                        <form action="#" method="GET" enctype="multipart/form-data">
+                        
+                        <form action="" method="post" enctype="multipart/form-data">
                             <div class="row">
+                                <div class="col-lg-5 dd-pc-none">
+                                    <div class="contact-info-2">
+                                        <div class="ci-box d-flex mb-3">
+                                            <div class="icon">
+                                                <i class="flaticon-user-1"></i>
+                                            </div>
+                                            <div class="detail">
+                                                <h5>Seller</h5>
+                                                <h6>John Doe</h6>
+                                            </div>
+                                        </div>
+                                        <div class="ci-box d-flex  mb-3">
+                                            <div class="icon">
+                                                <i class="flaticon-phone"></i>
+                                            </div>
+                                            <div class="detail">
+                                                <h5>Phone</h5>
+                                                <h6>+123456789</h6>
+                                            </div>
+                                        </div>
+                                        <div class="ci-box d-flex  mb-3">
+                                            <div class="icon">
+                                                <i class="flaticon-pin"></i>
+                                            </div>
+                                            <div class="detail">
+                                                <h5>Address</h5>
+                                                <h6>Lugano 6900 Switzerland</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="responsive-map res-map-dev" style="padding: 126px 0px 100px !important;left: -28px !important; margin-bottom: 20px !important;">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44341.119247079034!2d8.918566501959!3d46.00480580229349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842d8ddb970bbb%3A0xf07bb7ee1bac5419!2s6900%20Massagno%2C%20Switzerland!5e0!3m2!1sen!2stn!4v1647127042431!5m2!1sen!2stn" width="200" height="125" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>                                
+                                </div>
                                 <div class="col-lg-7">
                                     <h3 class="heading-2">Contact Form</h3>
                                     <div class="row">
@@ -340,22 +376,21 @@
                                                 <label for="floatingTextarea2">Message for seller..</label>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 captcha-mob">
                                             <div class="form-group">
                                                 <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"><div style="width: 305px;height: 80px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S&amp;co=aHR0cHM6Ly9ib290c3RyYXBpb3VzLmNvbTo0NDM.&amp;hl=en&amp;v=85AXn53af-oJBEtL2o2WpAjZ&amp;size=normal&amp;cb=2n4ex554ppjm" width="304" height="78" role="presentation" name="a-nsavkasmuxfw" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
                                                 <input class="form-control hidden" data-recaptcha="true" required="" data-error="Please complete the Captcha">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6" style="padding: 8px 0px 0px 70px;">
+                                        <div class="col-md-6 send-message-mob" style="padding: 8px 0px 0px 70px;">
                                             <div class="send-btn text-center ">
                                                 <button type="button" class="btn btn-primary btn-4 btn-lg">Send Message</button>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 dd-sm-none">
                                     <div class="contact-info-2">
                                         <div class="ci-box d-flex mb-3">
                                             <div class="icon">
@@ -385,9 +420,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="responsive-map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44341.119247079034!2d8.918566501959!3d46.00480580229349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842d8ddb970bbb%3A0xf07bb7ee1bac5419!2s6900%20Massagno%2C%20Switzerland!5e0!3m2!1sen!2stn!4v1647127042431!5m2!1sen!2stn" width="200" height="125" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                                        </div>
-                                 
+                                    <div class="responsive-map res-map-dev">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44341.119247079034!2d8.918566501959!3d46.00480580229349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842d8ddb970bbb%3A0xf07bb7ee1bac5419!2s6900%20Massagno%2C%20Switzerland!5e0!3m2!1sen!2stn!4v1647127042431!5m2!1sen!2stn" width="200" height="125" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>                                
                                 </div>
                             </div>
                         </form>
@@ -446,7 +481,7 @@
                         </ul>
                     </div>
                     <!-- Question start -->
-                    <div class="widget question">
+                    <div class="widget question dd-sm-none">
                         <h5 class="sidebar-title">Get a Question?</h5>
                         <ul class="contact-info">
                             <li>
@@ -458,15 +493,14 @@
                             <li>
                                 <i class="flaticon-phone"></i><a href="tel:+0477-85x6-552">+41 58 2551 177</a>
                             </li>
-                        </ul>
-                
+                        </ul>            
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Properties details page end -->
+<!-- Property details page end -->
 
 <!-- Footer start -->
 <footer class="footer">
@@ -478,18 +512,9 @@
                         Contact Info
                     </h4>
                     <ul class="contact-info">
-                        <!-- <li>
-                            <i class="flaticon-pin"></i>20 Rue Charles-Strum,<br>1206 GENÈVE.
-                        </li> -->
                         <li>
                             <i class="flaticon-mail"></i><a href="mailto:info@foxpass.ch">info@foxpass.ch</a>
                         </li>
-                        <!-- <li>
-                            <i class="flaticon-phone"></i><a href="tel:+55-417-634-7071">+41 58 2551 177</a>
-                        </li> -->
-                        <!-- <li>
-                            <i class="flaticon-fax"></i>+41 58 2551 177
-                        </li> -->
                         <li>
                             <i class="flaticon-earth"></i><a href="www.foxpass.ch">www.foxpass.ch</a>
                         </li>
@@ -551,18 +576,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <p class="copy">© 2020 <a href="#">Fox Pass.</a> All Rights Reserved.</p>
+                    <p class="copy">© 2020 <a href="#">FoxPass.</a> All Rights Reserved.</p>
                 </div>
-                <!-- <div class="col-lg-4">
-                    <div class="social-list-2">
-                        <ul>
-                            <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -578,85 +593,6 @@
     </form>
 </div>
 
-<!-- Car Overview Modal -->
-<div class="car-model-2">
-    <div class="modal fade" id="carOverviewModal" tabindex="-1" role="dialog" aria-labelledby="carOverviewModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title" id="carOverviewModalLabel">
-                        <h4>Explore Your next car</h4>
-                        <h5><i class="flaticon-pin"></i> Glovelier (JU) Glovelier 2855 Switzerland</h5>
-                    </div>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row modal-raw">
-                        <div class="col-lg-6 modal-left">
-                            <div class="item active">
-                                <img src="img/car-13.png" alt="best-car" class="img-fluid modalLabel-1">
-                                <img src="img/car-14.png" alt="best-car" class="img-fluid modalLabel-2">
-                                <div class="sobuz">
-                                    <div class="price-box">
-                                        <span class="del-2">$1050.00</span>
-                                    </div>
-                                    <!-- <div class="ratings-2">
-                                        <span class="ratings-box">4.5/5</span>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        ( 7 Reviews )
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 modal-right">
-                            <div class="modal-right-content">
-                                <section>
-                                    <h3>Features</h3>
-                                    <div class="features">
-                                        <ul class="bullets">
-                                            <li>Cruise Control</li>
-                                            <li>Airbags</li>
-                                            <li>Air Conditioning</li>
-                                            <li>Alarm System</li>
-                                            <li>Audio Interface</li>
-                                            <li>CDR Audio</li>
-                                            <li>Seat Heating</li>
-                                            <li>ParkAssist</li>
-                                        </ul>
-                                    </div>
-                                </section>
-                                <section>
-                                    <h3>Overview</h3>
-                                    <ul class="bullets">
-                                        <li>Model</li>
-                                        <li>Year</li>
-                                        <li>Condition</li>
-                                        <li>Price</li>
-                                        <li>Audi</li>
-                                        <li>2020</li>
-                                        <li>Brand New</li>
-                                        <li>$178,000</li>
-                                    </ul>
-                                </section>
-                                <div class="description">
-                                    <h3>Description</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                                    <a href="car-details.html" class="btn btn-md btn-round btn-theme">Show Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script src="js/jquery-2.2.0.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -678,6 +614,7 @@
 <script  src="js/jnoty.js"></script>
 <script  src="js/sidebar.js"></script>
 <script  src="js/app.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script  src="js/ie10-viewport-bug-workaround.js"></script>
