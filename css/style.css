@@ -13646,6 +13646,14 @@ input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s rightslide 
     .captcha-mob{
         padding: 0px 46px;
     }
+    .mb-dash-mob{
+        margin-bottom: -170px;
+    }
+    .pb-dash-mob{
+        padding-bottom: 140px;
+    }
+
+    
 
 }
 @media(min-width: 1000px) {
@@ -13660,3 +13668,15 @@ input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s rightslide 
 }
 }   
 
+/* tablets and phones */
+/* @media (min-width: 320px) and (max-width: 768px) {
+
+    .bgimg {
+        background-image: url('../img/pexels-gdtography-950241.jpg') !important;
+        background-repeat: no-repeat !important;
+        height: 800px !important;
+        width: 1000px !important;
+        background-size:100% auto !important;
+    } */
+
+}
