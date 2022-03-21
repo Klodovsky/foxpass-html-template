@@ -11502,7 +11502,7 @@ table {
         top: 49px;
         z-index: 9999;
         width: 100%;
-        background: rgba(12,12,12,0.1);
+        background: rgba(12,12,12,1);
     }
 
     .mh-4{
@@ -11526,7 +11526,7 @@ table {
     }
 
     .top-header-bg{
-        background: rgba(12,12,12,0.1);
+        background: rgba(12,12,12,1);
         position: fixed;
         top: 0;
         z-index: 999;
