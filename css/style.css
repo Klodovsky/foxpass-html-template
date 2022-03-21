@@ -707,7 +707,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .header-with-top{
-    background: rgba(12, 12, 12, 0.18);
+    background: rgba(0, 0, 0, 0.959);
 }
 
 .main-header .pad-0{
@@ -9446,7 +9446,7 @@ footer {
 
 /** Sub Banner start **/
 .sub-banner {
-    background: rgba(0, 0, 0, 0.04) url(../img/car-1.png) top left repeat;
+    background: rgba(0, 0, 0, 0.04) url(../img/pexels-francesco-ungaro-6032666.jpg) top left repeat;
     background-size: cover;
     height: 360px;
     background-position: center center;
@@ -12502,7 +12502,7 @@ table {
     }
 
     .top-header-bg {
-        background: rgba(12, 12, 12, 0.18);
+        background: rgba(0, 0, 0, 0.18);
         position: fixed;
         top: 0;
         z-index: 999;
