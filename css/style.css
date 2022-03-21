@@ -13686,7 +13686,7 @@ input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s rightslide 
       align-items: center;
       background-color: #f0151f;
       border: 0;
-      border-radius: 100px;
+      border-radius: 2px;
       box-sizing: border-box;
       color: #ffffff;
       cursor: pointer;
